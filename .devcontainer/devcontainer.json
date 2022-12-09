@@ -1,0 +1,10 @@
+{
+    "name": "DEV container for go",
+    "dockerComposeFile": "docker-compose.yaml",
+    "service": "golang",
+    "workspaceFolder": "/workspace",
+    "extensions": [
+        "golang.go",
+        "bierner.markdown-mermaid"
+    ]
+}

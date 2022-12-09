@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  golang:
+    build: 
+      context: golang
+      args:
+        - BASE_IMAGE=$BASE_IMAGE
+        - PLATFORM=$PLATFORM
+        - GO_VERSION=$GO_VERSION
+    volumes:
+      - ..:/workspace:cached
+    command: /bin/sh -c "while sleep 1000; do :; done"
